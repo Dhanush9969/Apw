@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lonavala Digital Library</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fas fa-book-reader"></i> EduLib</div>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#inventory"><i class="fas fa-search"></i> Catalog</a></li>
+            <li><a href="#"><i class="fas fa-user-circle"></i> My Account</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Your Gateway to Knowledge</h1>
+            <p>Explore thousands of technical journals and engineering textbooks.</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="filterBooks()" placeholder="Search by book name or author...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="inventory">
+        <div class="section-header">
+            <h2>Library Catalog</h2>
+            <p>Real-time availability of resources</p>
+        </div>
+        
+        <div class="table-container">
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th>Preview</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Availability</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- JS will populate this -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EduLib Management</h3>
+                <p>Providing quality resources for Computer Engineering students.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="socials">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 EduLib Systems | Designed for AWP Project
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
