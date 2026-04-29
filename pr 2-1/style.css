@@ -1,0 +1,61 @@
+body {
+    background: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    border: 5px solid #ffcb05; /* Pokemon Yellow */
+}
+
+.hidden { display: none; }
+
+.poke-sprite {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn, .opt-btn {
+    padding: 15px;
+    border: 2px solid #3d7dca;
+    background: white;
+    color: #3d7dca;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn { background: #3d7dca; color: white; width: 100%; }
+
+.opt-btn:hover {
+    background: #3d7dca;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #444;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoC Player Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-card">
+        <header>
+            <img src="https://wallpapers.com/images/hd/clash-of-clans-logo-3p9fmxz08986j3ly.png" alt="CoC Logo" class="logo">
+            <h1>Chief's Feedback</h1>
+        </header>
+
+        <form id="cocForm">
+            <!-- Hero Dropdown -->
+            <div class="field">
+                <label for="hero">Favorite Hero</label>
+                <select id="hero" name="hero">
+                    <option value="bk">Barbarian King</option>
+                    <option value="aq">Archer Queen</option>
+                    <option value="gw">Grand Warden</option>
+                    <ioption value="rc">Royal Champion</option>
+                </select>
+            </div>
+
+            <!-- TH Number Input -->
+            <div class="field">
+                <label for="th">Favorite Town Hall Design (1-16)</label>
+                <input type="number" id="th" name="th" min="1" max="16" value="13">
+            </div>
+
+            <!-- Radio Buttons for Playstyle -->
+            <div class="field">
+                <label>Preferred Strategy</label>
+                <div class="options">
+                    <input type="radio" name="strat" id="air" value="air"> <label for="air">Air Attack</label>
+                    <input type="radio" name="strat" id="ground" value="ground"> <label for="ground">Ground Smash</label>
+                </div>
+            </div>
+
+            <!-- Textarea for updates -->
+            <div class="field">
+                <label for="suggest">What should Supercell add next?</label>
+                <textarea id="suggest" rows="4" placeholder="New defense? New troop?"></textarea>
+            </div>
+
+            <button type="submit" class="clash-btn">Send to Clan Castle</button>
+        </form>
+    </div>
+</body>
+</html>

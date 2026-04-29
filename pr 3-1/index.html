@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura | Authentic Japanese Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fas fa-seedling"></i> SAKURA</div>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Taste the Tradition</h1>
+            <p>Premium Japanese Cuisine Delivered to Your Zen Space</p>
+        </div>
+    </header>
+
+    <section class="restaurant-body">
+        <!-- Today's Special Box -->
+        <div class="special-box">
+            <div class="gold-badge">Today's Special</div>
+            <div class="special-content" id="special-item">
+                <!-- Featured item injected here -->
+            </div>
+        </div>
+
+        <!-- Main Menu Box -->
+        <div class="menu-wrapper">
+            <h2 class="menu-title">Our Menu</h2>
+            <div class="menu-grid" id="menu-grid">
+                <!-- 15+ items injected here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Cart -->
+    <div id="cart-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Your Order</h3>
+            <button onclick="toggleCart()" class="close-cart">×</button>
+        </div>
+        <div id="cart-items">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <h4>Total: ¥<span id="cart-total">0</span></h4>
+            <button class="checkout-btn" onclick="processOrder()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Review System -->
+    <section class="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="review-form">
+            <textarea id="revText" placeholder="How was your meal? Share your experience..."></textarea>
+            <button onclick="addReview()" class="post-btn">Post Review</button>
+        </div>
+        <div id="review-list">
+            <div class="rev">⭐ "The Ramen was incredibly authentic!" - Happy Customer</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Sakura Japanese Dining | Group C Practical Submission</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
